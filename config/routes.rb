@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   get '/index', to: 'pages#index'
 
+
+  get '/publication', to: 'pages#publication'
+
 end
