@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+.navbar-toggle{
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.navbar {
+  height: 100px;
+}
+
+.logo img{
+  height: 80px;
+}
+
+.navbar {
+  background-color: #f48833;
+}
+
+
+
+.navigation {
+  padding-top: 45px;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+.donate {
+  padding-top: 25px;
+
+  padding-right: 25px;
+  padding-left:20px;
+}
+
+.btn{
+  font-size: 30px;
+}
+
+@media (max-width: 1125px){
+
+
+  .navigation{
+    font-size: 15px;
+    padding-right: 5px;
+  }
+
+  .btn{
+    font-size: 18px;
+  }
+
+  .donate {
+    padding-top: 30px;
+
+    padding-right:0px;
+    padding-left:10px;
+  }
+
+  .logo img{
+    height: 68px;
+  }
+
+  .navbar {
+    height: 90px;
+  }
+}
+
+@media (max-width: 767px){
+
+.navbar-collapse {
+  margin-top: 23px;
+  background-color: #f48833;
+}
+  .donate {
+    padding-top: 30px;
+
+    padding-right:0px;
+    padding-left: 20px;
+  }
+
+  .navigation{
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 25px;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+  }
+
+  .btn {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1125px) {
+  .navigation{
+    font-size: 1.9vw;
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+
+}
