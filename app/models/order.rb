@@ -3,11 +3,9 @@ class Order < ActiveRecord::Base
   has_many :publications, through: :publication_purchases
 
   def calculate_total
-    binding.pry
     publication_purchases.each do |purchase|
       self.total += purchase.publication.price*purchase.quantity
     end
-    binding.pry
   end
 
   def quantity(publication)
@@ -18,7 +16,7 @@ class Order < ActiveRecord::Base
     # params is a hash of key value pairs 'publication_id => quantity'
     params.keys.each do |publication_id|
       publication_purchases.new(publication_id: publication_id,
-                                   quantity: params[publication_id])
+                                quantity: params[publication_id])
     end
   end
 

@@ -17,7 +17,7 @@
     </tbody>
   </table>
   <hr>
-
+  <span id="total" class="pull-right">Total: <%= @total %></span>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
   data-description="Checkout"

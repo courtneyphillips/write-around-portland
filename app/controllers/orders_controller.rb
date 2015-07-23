@@ -3,10 +3,10 @@ class OrdersController < ApplicationController
 
   def new
     @order_publications = Publication.find(session[:cart])
+    @total = @order_publications.map(&:price).reduce(:+)
   end
 
   def create
-    binding.pry
     @order = Order.new(email: stripe_params[:stripeEmail], card_token: stripe_params[:stripeToken])
     @order.add_items(publications_params)
     @order.calculate_total

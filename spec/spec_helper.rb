@@ -16,6 +16,11 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
+# Setting to default wait time for Capybara as a work around for testing Stripe submit
+Capybara.default_wait_time = 6
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
