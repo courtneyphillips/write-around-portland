@@ -1,0 +1,153 @@
+<!--publication timeline -->
+<section id="cd-timeline">
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img cd-picture">
+      <%= image_tag "book.png" %>
+		</div> <!-- cd-timeline-img -->
+  <!--2015 -->
+		<div class="cd-timeline-content">
+			<h2>Toward the Sound</h2>
+      <p>Spring Vol 16, No 1</p>
+			<a href="http://www.writearound.org/publications/documents/SP15Introduction_AnneScott.pdf" class="cd-read-more">Read more</a>
+			<span class="cd-date">2015</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+
+<!--2014 -->
+
+	<div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-picture">
+      <%= image_tag "book.png" %>
+		</div> <!-- cd-timeline-img -->
+
+		<div class="cd-timeline-content">
+			<h2>A World Where the Rules Were My Own</h2>
+			<p>Spring, Vol 16, No 1</p>
+			<a href="http://www.writearound.org/publications/documents/ChipShieldsintro_website.pdf" class="cd-read-more">Read more</a>
+      <br><br>
+      <h2>Fifth and Pine / Quinto y Pino</h2>
+			<p>Spring, Vol 16, No 2</p>
+			<a href="http://www.writearound.org/publications/documents/PeterSearsIntro_Website_000.pdf" class="cd-read-more">Read more</a>
+      <br>
+      <h2>Mile Marker</h2>
+			<p>Fall, Vol 16, No 3</p>
+			<a href="http://www.writearound.org/publications/documents/MiramSontzIntro_Website.pdf" class="cd-read-more">Read more</a>
+			<span class="cd-date">2014</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+
+<!--2013 -->
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-picture">
+      <%= image_tag "book.png" %>
+		</div> <!-- cd-timeline-img -->
+
+		<div class="cd-timeline-content">
+			<h2>Hear Each Drop / Escuchar Cada Gota</h2>
+			<p>Spring, Vol 15, No 1</p>
+			<a href="http://www.writearound.org/publications/documents/Intro_SarahKnuth_web.pdf" class="cd-read-more">Read more</a>
+      <br><br><br>
+      <h2>Breakfast, Lunch &amp; Dinner</h2>
+			<p>Spring</p>
+      <p>A chapbook of writing by Parkrose elementary and high school students</p>
+      <h2>Concrete / Concreto</h2>
+			<p>Summer, Vol 15, No 2</p>
+			<a href="http://www.writearound.org/publications/documents/Intro_JanaDeCristofaro_web.pdf" class="cd-read-more">Read more</a>
+      <br><br><br>
+      <h2>Steering Wheel / Volante</h2>
+			<p>Fall, Vol 15, No 3</p>
+			<a href="http://www.writearound.org/publications/documents/NatalieSerberintro_website.pdf" class="cd-read-more">Read more</a>
+			<span class="cd-date">2013</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+
+<!--2012 -->
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-picture">
+      <%= image_tag "book.png" %>
+		</div> <!-- cd-timeline-img -->
+
+		<div class="cd-timeline-content">
+			<h2>Roundabout</h2>
+			<p>Spring, Vol 14, No 1</p>
+			<a href="http://www.writearound.org/publications/documents/SP12JohnMorrisonIntro_web.pdf" class="cd-read-more">Read more</a>
+      <br><br>
+      <h2>Have You Seen My Buffalo</h2>
+			<p>Spring</p>
+      <p>Chapbook featuring 5th graders in the Parkrose School District</p>
+      <br>
+      <h2>A Handful of Bright / Un Puñado de Brillo</h2>
+			<p>Summer, Vol 14, No 2</p>
+			<a href="http://www.writearound.org/publications/documents/MelissaMadenskiintro_Web.pdf" class="cd-read-more">Read more</a>
+      <br><br><br>
+      <h2>Volume Up, Volume Down / Volumen Alto, Volumne Bajo</h2>
+			<p>Fall, Vol 14, No 3</p>
+			<a href="http://www.writearound.org/publications/documents/HannaNeuschwanderIntro_Web.pdf" class="cd-read-more">Read more</a>
+			<span class="cd-date">2012</span>
+		</div> <!-- cd-timeline-content -->
+	</div> <!-- cd-timeline-block -->
+
+  <!--2011 -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <%= image_tag "book.png" %>
+  		</div> <!-- cd-timeline-img -->
+
+  		<div class="cd-timeline-content">
+  			<h2>Still the Days Grow Longer</h2>
+  			<p>Spring, Vol 13, No 1</p>
+  			<a href="http://www.writearound.org/publications/documents/IntrobyJeanaEdelman_web.pdf" class="cd-read-more">Read more</a>
+        <br><br><br>
+        <h2>Moving or Still / En Movimiento o Quieto</h2>
+  			<p>Summer, Vol 13, No 2</p>
+        <a href="http://www.writearound.org/publications/documents/Intro_CaroleMorse_web.pdf" class="cd-read-more">Read more</a>
+        <br><br><br>
+        <h2>Blueprint to My Backbon</h2>
+  			<p>Fall, Vol 13, No 3</p>
+  			<a href="http://www.writearound.org/publications/documents/Intro_KateGray_web.pdf" class="cd-read-more">Read more</a>
+        <br><br><br>
+        <h2>When The Leaves Come Out of Their Trees</h2>
+  			<p>Fall</p>
+        <p>Chapbook featuring 5th &amp; 6th graders in the Parkrose School District</p>
+  			<span class="cd-date">2011</span>
+  		</div> <!-- cd-timeline-content -->
+  	</div> <!-- cd-timeline-block -->
+
+    <!--2010 -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <%= image_tag "book.png" %>
+    		</div> <!-- cd-timeline-img -->
+
+    		<div class="cd-timeline-content">
+    			<h2>The Top</h2>
+    			<p>Spring, Vol 12, No 1</p>
+    			<a href="http://www.writearound.org/publications/documents/Intro_Paulann_LuckyUs.pdf" class="cd-read-more">Read more</a>
+          <br>
+          <h2>Follow Me, Move the World</h2>
+    			<p>Summer, Vol 13, No 2</p>
+          <a href="http://www.writearound.org/publications/documents/SU10intro_BenMoorad_web.pdf" class="cd-read-more">Read more</a>
+          <br>
+          <h2>Look Out On Your City / Mira Tu Cuidad</h2>
+    			<p>Fall, Vol 12, No 3</p>
+    			<a href="http://www.writearound.org/publications/documents/Introduction_RichardMeeker_web.pdf" class="cd-read-more">Read more</a>
+    			<span class="cd-date">2010</span>
+    		</div> <!-- cd-timeline-content -->
+    	</div> <!-- cd-timeline-block -->
+
+	</div>
+</section>
+
+<script>
+$(window).on('scroll', function(){
+  $timeline_block.each(function(){
+    if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+      $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+    }
+  });
+});
+</script>

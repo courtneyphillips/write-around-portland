@@ -1,0 +1,197 @@
+<div class="container">
+	<%= image_tag "book grid 3.png", class:"header_pic" %>
+
+<br>
+<div class="page-header">
+		<h1 id="timeline">Publications &amp; Writers</h1>
+		<p class="lead">Write Around Portland publishes high-quality and unique books featuring the powerful, engaging writing by participants in our workshops in hospitals, schools, prisons, treatment centers and social service agencies. These anthologies are professionally designed by Precious Bugarin, and more than 70 volunteers help us put each book together.</p>
+		<br>
+</div>
+
+
+
+<div class="page-header">
+	<h1 id="timeline">Featured Writer</h1>
+	<br>
+	<div class="row">
+		<div class="col-md-6" id="writer">
+					<%= image_tag "lori.JPG", class:"writer_pic" %>
+		</div>
+		<div class="col-md-6">
+			<div class="left-arrow">
+					<p class="quote">Lori participated in our writing workshop at Street Roots. Lori said of her experience in the workshop, "Well, I have to say it was the best workshop I’ve ever been to... Sharing gave me sort of a sense of responsibility to get stuff on paper, because I knew that inside me I had to share, or I wanted to share."</p>
+					<br>
+					<a class="btn btn-default" href="http://www.writearound.org/publications/LoriL.Lematta.html" role="button">Read More</a>
+
+			</div>
+		</div>
+	</div>
+	<br><br><br><br>
+</div>
+
+
+
+<!--publication timeline -->
+
+    <div class="page-header">
+        <h1 id="timeline">Anthologies &amp; Chapbooks</h1>
+    </div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-book"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">2015</h3>
+            </div>
+            <div class="timeline-body">
+							<h4>Toward the Sun</h4>
+              <p><small class='text-muted'>Spring Vol 16, No 1</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/SP15Introduction_AnneScott.pdf" role="button">Read More</a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-book"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">2014</h3>
+            </div>
+            <div class="timeline-body">
+							<h4>A World Where the Rules Were My Own</h4>
+							<p><small class='text-muted'>Spring, Vol 16, No 1</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/ChipShieldsintro_website.pdf" role="button">Read More</a>
+
+							<h4>Fifth and Pine / Quinto y Pino</h4>
+							<p><small class='text-muted'>Spring, Vol 16, No 2</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/PeterSearsIntro_Website_000.pdf" role="button">Read More</a>
+
+
+							<h4>Mile Marker</h4>
+							<p><small class='text-muted'>Fall, Vol 16, No 3</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/MiramSontzIntro_Website.pdf" role="button">Read More</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-book"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">2013</h3>
+            </div>
+            <div class="timeline-body">
+							<h4>Hear Each Drop / Escuchar Cada Gota</h4>
+							<p><small class='text-muted'>Spring, Vol 15, No 1</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/Intro_SarahKnuth_web.pdf" class="cd-read-more" role="button">Read More</a>
+            </div>
+						<div class="timeline-body">
+							<h4>Breakfast, Lunch &amp; Dinner</h4>
+							<p><small class='text-muted'>Spring</small></p>
+							<p>A chapbook of writing by Parkrose elementary and high school students</p>
+            </div>
+						<div class="timeline-body">
+							<h4>Concrete / Concreto</h4>
+							<p><small class='text-muted'>Summer, Vol 15, No 2</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/Intro_JanaDeCristofaro_web.pdf" role="button">Read More</a>
+            </div>
+						<div class="timeline-body">
+							<h4>Steering Wheel / Volante</h4>
+							<p><small class='text-muted'>Fall, Vol 15, No 3</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/NatalieSerberintro_website.pdf" role="button">Read More</a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">2012</h3>
+            </div>
+            <div class="timeline-body">
+							<h4>Roundabout</h4>
+							<p><small class='text-muted'>Spring, Vol 14, No 1</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/SP12JohnMorrisonIntro_web.pdf" role="button">Read More</a>
+            </div>
+						<div class="timeline-body">
+							<h4>Have You Seen My Buffalo</h4>
+							<p><small class='text-muted'>Spring</small></p>
+							<p>Chapbook featuring 5th graders in the Parkrose School District</p>
+            </div>
+						<div class="timeline-body">
+							<h4>A Handful of Bright / Un Puñado de Brillo</h4>
+							<p><small class='text-muted'>Summer, Vol 14, No 2</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/MelissaMadenskiintro_Web.pdf" role="button">Read More</a>
+							<div class="timeline-body">
+								<h4>Volume Up, Volume Down / Volumen Alto, Volumne Bajo</h4>
+								<p><small class='text-muted'>Fall, Vol 14, No 3</small></p>
+								<br>
+								<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/HannaNeuschwanderIntro_Web.pdf" role="button">Read More</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-book"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">2011</h3>
+            </div>
+            <div class="timeline-body">
+							<h4>Still the Days Grow Longer</h4>
+							<p><small class='text-muted'>Spring, Vol 13, No 1</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/IntrobyJeanaEdelman_web.pdf" role="button">Read More</a>
+						</div>
+						<div class="timeline-body">
+							<h4>Moving or Still / En Movimiento o Quieto</h4>
+							<p><small class='text-muted'>Summer, Vol 13, No 2</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/Intro_CaroleMorse_web.pdf" role="button">Read More</a>
+						</div>
+						<div class="timeline-body">
+							<h4>Blueprint to My Backbon</h4>
+							<p><small class='text-muted'>Fall, Vol 13, No 3</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/Intro_KateGray_web.pdf" role="button">Read More</a>
+						</div>
+						<div class="timeline-body">
+							<h4>When The Leaves Come Out of Their Trees</h4>
+							<p><small class='text-muted'>Fall</small></p>
+							<p>Chapbook featuring 5th &amp; 6th graders in the Parkrose School District</p>
+						</div>
+
+        <li class="timeline-inverted">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-book"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">2010</h3>
+            </div>
+            <div class="timeline-body">
+							<h4>The Top</h4>
+							<p><small class='text-muted'>Spring, Vol 12, No 1</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/Intro_Paulann_LuckyUs.pdf" role="button">Read More</a>
+						</div>
+						<div class="timeline-body">
+							<h4>Follow Me, Move the World</h4>
+							<p><small class='text-muted'>Summer, Vol 13, No 2</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/SU10intro_BenMoorad_web.pdf" role="button">Read More</a>
+						</div>
+						<div class="timeline-body">
+							<h4>Look Out On Your City / Mira Tu Cuidad</h4>
+							<p><small class='text-muted'>Fall, Vol 12, No 3</small></p>
+							<br>
+							<a class="btn btn-default btn-xs" href="http://www.writearound.org/publications/documents/Introduction_RichardMeeker_web.pdf" role="button">Read More</a>
+						</div>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
