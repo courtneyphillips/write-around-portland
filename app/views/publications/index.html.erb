@@ -1,7 +1,13 @@
 <%= flash[:notice] %>
 
 <div class="container">
-  <%= image_tag "book grid 3.png", class:"header_pic" %>
+  <%= image_tag "online_store.png", class:"header_pic" %>
+
+  <div class="cart">
+    <h2><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></h2>
+    <h4>Items in cart: <%= @cart_count %></h4>
+    <h4><%= link_to "Checkout", new_order_path %></h4>
+  </div>
 
 <br>
 <div class="page-header">
@@ -10,18 +16,18 @@
     <br>
 </div>
 
+
+
+
 <div class="row">
   <% @publications.each do |pub| %>
-    <div class="col-md-6 book_entry">
-      <h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  <%= link_to pub.title, publication_path(pub) %></h3>
-      <h4><%= pub.release_year %></h4>
-      $ <%= pub.price %>0
+    <div class="col-md-4">
+      <div class="book_entry hvr-glow">
+        <h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  <%= link_to pub.title, publication_path(pub) %></h3>
+        <h4><%= pub.release_year %></h4>
+        $ <%= pub.price %>0
+      </div>
     </div>
   <% end %>
 </div>
 <hr>
-<div class="cart">
-  Items in cart: <%= @cart_count %>
-  <%= link_to "Checkout", new_order_path %>
-
-</div>
