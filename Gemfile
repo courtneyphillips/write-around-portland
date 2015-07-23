@@ -15,6 +15,7 @@ gem "rails_12factor", group: :production #heroku deployment
 gem "pry"
 gem "rest-client"
 gem "stripe"
+gem 'owlcarousel-rails'
 
 group :development do
   gem 'byebug'
