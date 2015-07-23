@@ -1,5 +1,4 @@
-class Donation < ActiveRecord::Base
-
+module Payable
 
   def process_payment
     customer = Stripe::Customer.create  email: email,

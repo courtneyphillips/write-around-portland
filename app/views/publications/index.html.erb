@@ -1,0 +1,8 @@
+<%= flash[:notice] %>
+
+<% @publications.each do |pub| %>
+
+  <h3><%= link_to pub.title, publication_path(pub) %></h3>
+  <em><%= pub.release_year %></em>
+  $ <%= pub.price %>
+<% end %>
