@@ -7,4 +7,6 @@ class PagesController < ApplicationController
   def about
   end
 
+  def writers
+  end
 end

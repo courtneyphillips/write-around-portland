@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   patch "/update_cart", to: "orders#update_cart"
   get '/index', to: 'pages#index'
-  get '/publication', to: 'pages#publication'
+  get '/writers', to: 'pages#writers'
 
 
 end

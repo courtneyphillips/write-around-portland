@@ -12,8 +12,18 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
 
-          <li class="navigation"> Writing Workshop & Events </li>
-          <li class=" second navigation"> Publications & Writers </li>
+          <li class="navigation"><a> Writing Workshop & Events</a> </li>
+
+          <li class=" dropdown second navigation">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Publications & Writers <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'Book E-store', publications_path %></li>
+              <li><%= link_to "Writers", writers_path %></li>
+            </ul>
+
+          </li>
           <li class="donate"><span class= "btn btn-primary"> Donate </span> </li>
 
         </ul>
