@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :orders
 
   patch "/update_cart", to: "orders#update_cart"
+
+  get '/publication', to: 'pages#publication'
 end
