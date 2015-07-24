@@ -30,11 +30,8 @@ class OrdersController < ApplicationController
       end
 
       format.json do
-        publication_id = params[:publication_id]
-        quantity       = params[:quantity]
-        set_quantity_in_cart(publication_id, quantity)
-        @new_total = calculate_cart_total
-        render :json => { total: @new_total }.to_json
+        set_quantity_in_cart(params[:publication_id], params[:quantity])
+        render :json => { total: calculate_cart_total }.to_json
       end
     end
   end
