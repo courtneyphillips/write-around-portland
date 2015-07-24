@@ -1,16 +1,83 @@
+<div class="container">
 
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
 
-  <div class= "jumbotron">
-    <%= image_tag "headerpic.png", id: "header-pic" %>
-    <h2>To change lives through the power of writing</h2>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<%= image_tag "slide1.png" %>
+				<div class="carousel-caption">
+
+				</div>
+			</div>
+			<div class="item">
+				<%= image_tag "slide2.png" %>
+				<div class="carousel-caption">
+
+				</div>
+			</div>
+			<div class="item">
+				<%= image_tag "slide3.png" %>
+				<div class="carousel-caption">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</a>
+	</div>
+
+  <div class="intro">
+    <p class="lead">To change lives through the power of writing</p>
   </div>
 
-  <div>
-    <h2>Writing Workshops for Everyone</h2>
-    <p>
-      We bring our free 10-week creative writing workshops to hospitals, schools, prisons, shelters, senior centers, low income housing, treatment facilities, health care and social service settings. We publish anthologies and hold readings to connect readers and writers.
-    </p>
-    <p>
-      We offer Prompt at Powell's City of Books and writing workshops at HOTLIPS Pizza for writers who want to participate in our workshops and support the communities we traditionally serve.
-    </p>
+
+
+
+<div class="container marketing">
+  <div class="row">
+    <div class="col-lg-4">
+      <%= image_tag "book_icon.png", :class => "img-circle" %>
+      <h2>Who We Are</h2>
+      <p>Write Around Portland is a nonprofit organization dedicated to changing lives and building community through writing.</p>
+      <p>
+        <a class='btn btn-default' href='#' role='button'>View Details</a>
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <%= image_tag "notepad .png", :class => "img-circle" %>
+      <h2>What We Do</h2>
+      <p>We bring our free 10-week creative writing workshops to hospitals, schools, prisons, shelters, senior centers, low income housing, treatment facilities, health care and social service settings. We publish anthologies and hold readings to connect readers and writers.</p>
+      <p>
+        <a class='btn btn-default' href='#' role='button'>View Details</a>
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <%= image_tag "people.png", :class => "img-circle" %>
+      <h2>What You Can Do</h2>
+      <p>Participate in a writing workshop.</p>
+      <p>Host a reading.</p>
+      <p>Use your Fred Meyers rewards card.</p>
+      <p>Donate a journal</p>
+      <p>
+        <a class='btn btn-default' href='#' role='button'>View Details</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
 </div>
