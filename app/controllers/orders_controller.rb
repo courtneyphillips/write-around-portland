@@ -31,7 +31,7 @@ class OrdersController < ApplicationController
 
       format.json do
         set_quantity_in_cart(params[:publication_id], params[:quantity])
-        render :json => { total: calculate_cart_total }.to_json
+        render :json => { total: format_money(calculate_cart_total) }.to_json
       end
     end
   end

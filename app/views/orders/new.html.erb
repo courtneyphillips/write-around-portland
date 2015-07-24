@@ -10,7 +10,7 @@
       <% @order.publications.each do |publication| %>
       <tr>
         <td><%= publication.title %></td>
-        <td><%= publication.price %></td>
+        <td><%= format_money(publication.price) %></td>
         <td><%= text_field_tag publication.id, 1, id: publication.id, class: "quantity" %></td>
       </tr>
       <% end %>
@@ -18,7 +18,7 @@
   </table>
   <hr>
   <span class="pull-right">Total:
-    <span id="total"><%= @order.total %></span>
+    <span id="total"><%= format_money(@order.total) %></span>
   </span>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
