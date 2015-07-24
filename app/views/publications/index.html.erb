@@ -1,13 +1,33 @@
 <%= flash[:notice] %>
 
-<% @publications.each do |pub| %>
+<div class="container">
+  <%= image_tag "online_store.png", class:"header_pic" %>
 
-  <h3><%= link_to pub.title, publication_path(pub) %></h3>
-  <em><%= pub.release_year %></em>
-  $ <%= pub.price %>
-<% end %>
-<hr>
-<div>
-  Items in cart: <%= @cart_count %>
+  <div class="cart">
+    <h2><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></h2>
+    <h4>Items in cart: <%= @cart_count %></h4>
+    <h4><%= link_to "Checkout", new_order_path %></h4>
+  </div>
+
+<br>
+<div class="page-header">
+    <h1 id="timeline">Online Store</h1>
+    <p class="lead">Write Around Portland publications are available to purchase online.</p>
+    <br>
 </div>
-<%= link_to "Checkout", new_order_path %>
+
+
+
+
+<div class="row">
+  <% @publications.each do |pub| %>
+    <div class="col-md-4">
+      <div class="book_entry hvr-glow">
+        <h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  <%= link_to pub.title, publication_path(pub) %></h3>
+        <h4><%= pub.release_year %></h4>
+        $ <%= pub.price %>0
+      </div>
+    </div>
+  <% end %>
+</div>
+<hr>
