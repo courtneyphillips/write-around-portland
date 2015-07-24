@@ -1,0 +1,35 @@
+Peer Review
+
+
+Is the Github documentation - commits and README - thorough and descriptive?
+  Good commit history.
+  But no ReadMe file.
+
+
+Is there good spec coverage?
+  Good coverage.
+
+Do all specs pass?
+  Yes.
+
+Is the application logic clear and easy to navigate?
+  Sure.
+
+Can you make a test payment through Stripe?
+  Yes we can.
+
+Is the site user-friendly?
+  Yes.
+
+Are there opportunities for refactoring?
+  Looks awesome as is but refactoring can always be found/done.
+
+What features stand out?
+  E-store is great!
+
+What features could be improved?
+  Making the links at the bottom of the home live, providing us more details on this awesome site and its content.
+
+
+Do you have any additional constructive criticism or positive feedback to share?
+  You did a great job. The site looks amazing. The color pallete shines.
