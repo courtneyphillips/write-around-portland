@@ -1,8 +1,29 @@
+<%= link_to "Back to Store", publications_path %>
+
+<div class="cart">
+  <h2><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></h2>
+  <h4>Items in cart: <%= @cart_count %></h4>
+  <h4 text-align="center"><%= link_to "Checkout", new_order_path %></h4>
+</div>
+
+
 <h2><%= @publication.title %></h2>
+<h3 class="lead"><em>By Jane Doe</em> | <%= @publication.release_year %></h3>
+<h4><%= format_money(@publication.price) %> </h4>
 
-"image!"
+<div class="book_image_container">
+  <%= image_tag "book_placeholder.jpeg", class:"book_image" %>
+</div>
 
-<h3><%= @publication.release_year %></h3>
+<div class="row">
+  <div class="col-md-6">
+    <h4>Synopsis:</h4> <p class="synopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tellus nibh. Nulla rutrum tellus porttitor, lacinia tortor vitae, eleifend est. Phasellus quis erat a lectus maximus efficitur. Ut fringilla sagittis odio a molestie. Praesent suscipit orci sed viverra consequat. Proin pulvinar tortor id pulvinar ultricies. Vivamus id facilisis massa, nec eleifend urna. Nullam sed quam ut dui luctus molestie eu a ipsum. In in mauris in odio egestas vestibulum tempus at sem.</p>
+    <p class="synopsis">Integer suscipit libero nunc, sit amet pulvinar sapien aliquet et. Sed porta neque tincidunt interdum rhoncus. Etiam gravida egestas leo, id dictum lacus dapibus quis. Donec sodales eros at tortor congue, quis facilisis ex condimentum. Integer accumsan ex non feugiat porttitor. Nulla lacinia rutrum purus, non dapibus tellus dignissim at. Aliquam porta arcu nulla, non congue velit gravida ut. Maecenas in neque suscipit, aliquet nulla vel, posuere elit. Morbi maximus lectus at fringilla euismod. Pellentesque accumsan sem quis vestibulum ultricies. Ut congue elit a nulla ullamcorper, et ultricies nisl posuere. Aliquam vel magna eros. Praesent convallis tincidunt enim id elementum. Fusce mollis ipsum vel faucibus pretium.</p>
+  </div>
+  <div class="col-md-6">
+    <h4>About the Author:</h4> <p class="synopsis"> <p class="synopsis">Integer suscipit libero nunc, sit amet pulvinar sapien aliquet et. Sed porta neque tincidunt interdum rhoncus. Etiam gravida egestas leo, id dictum lacus dapibus quis. Donec sodales eros at tortor congue, quis facilisis ex condimentum. Integer accumsan ex non feugiat porttitor. Nulla lacinia rutrum purus, non dapibus tellus dignissim at. Aliquam porta arcu nulla, non congue velit gravida ut. Maecenas in neque suscipit, aliquet nulla vel, posuere elit. Morbi maximus lectus at fringilla euismod. Pellentesque accumsan sem quis vestibulum ultricies. Ut congue elit a nulla ullamcorper, et ultricies nisl posuere. Aliquam vel magna eros. Praesent convallis tincidunt enim id elementum. Fusce mollis ipsum vel faucibus pretium.</p>
+  </div>
+</div>
+<hr>
 
-
-<%= link_to "Add to cart", update_cart_path(publication_id: @publication.id), method: :patch %>
+<%= link_to "Add to cart", update_cart_path(publication_id: @publication.id), method: :patch, class: "btn btn-primary hvr-glow" %>

@@ -1,0 +1,17 @@
+<%= javascript_include_tag "donation" %>
+
+<%= form_for @donation do |f| %>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+  <%= f.label :amount %>
+  <%= f.text_field :amount %>
+
+  <%= f.hidden_field :email %>
+  <%= f.hidden_field :card_token %>
+
+  <%= f.submit "Pay with Card", id: "custom_button" %>
+<% end %>

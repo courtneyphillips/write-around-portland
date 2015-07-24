@@ -6,8 +6,8 @@ class Donation < ActiveRecord::Base
                                         card: card_token
 
     Stripe::Charge.create  customer: customer.id,
-                            amount: self.amount.to_i * 100,
-                            currency: 'usd',
-                            receipt_email: customer.email
+                           amount: (amount * 100).to_i,
+                           currency: 'usd',
+                           receipt_email: customer.email
   end
 end

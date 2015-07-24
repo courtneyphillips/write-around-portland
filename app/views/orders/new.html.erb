@@ -1,44 +1,33 @@
 <h2>Shopping Cart:</h2>
-<%= form_tag orders_path do |f| %>
-  <table class="table">
-    <thead>
-      <th>Publication</th>
-      <th>Price</th>
-      <th>Quantity</th>
-    </thead>
-    <tbody>
-      <% @order.publications.each do |publication| %>
-      <tr>
-        <td><%= publication.title %></td>
-        <td><%= publication.price %></td>
-        <td><%= text_field_tag publication.id, 1, id: publication.id, class: "quantity" %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
-  <hr>
-  <span class="pull-right">Total:
-    <span id="total"><%= @order.total %></span>
-  </span>
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-  data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
-  data-description="Checkout"
-  data-panel-label="Pay"></script>
+<table class="table">
+  <thead>
+    <th>Publication</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </thead>
+  <tbody>
+    <% @order.publications.each do |publication| %>
+    <tr>
+      <td><%= publication.title %></td>
+      <td><%= format_money(publication.price) %></td>
+      <td><%= text_field_tag publication.id, quantity_in_cart(publication),
+                                id: publication.id, class: "quantity" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<hr>
+<span class="pull-right">Total:
+  <span id="total"><%= format_money(@order.total) %></span>
+</span>
+
+
+<%= form_tag orders_path, id: "new_order" do %>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <%= hidden_field_tag :email %>
+  <%= hidden_field_tag :card_token %>
+
+  <%= button_tag "Pay with Card", id: "custom_button" %>
 <% end %>
-<script>
-  $(".quantity").on("change keyup paste", function() {
-    var publication_id = $(this).attr("id");
-    var quantity       = $(this).val();
-    if (quantity) {
-      $.ajax({
-        method: "PATCH",
-        url: "/update_cart",
-        dataType: "json",
-        data: { publication_id: publication_id,
-                quantity:       quantity }
-      }).then(function(response) {
-        $("#total").text(response.total);
-      });
-    }
-  });
-</script>
+
+<%= javascript_include_tag "order" %>

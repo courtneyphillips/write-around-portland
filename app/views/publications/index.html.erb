@@ -1,12 +1,13 @@
-<%= flash[:notice] %>
+<%= flash_message %>
 
 <div class="container">
-  <%= image_tag "online_store.png", class:"header_pic" %>
+  <%= image_tag "online_store.png", class:"header_image" %>
 
-  <div class="cart">
-    <h2><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></h2>
-    <h4>Items in cart: <%= @cart_count %></h4>
-    <h4><%= link_to "Checkout", new_order_path %></h4>
+  <div class="cart hvr-glow">
+
+    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><br>
+    <h4><%= @cart_count %> items in cart.<br>
+    <h4><a href="<%= new_order_path %>">Checkout</a><br></h4>
   </div>
 
 <br>
@@ -22,10 +23,10 @@
 <div class="row">
   <% @publications.each do |pub| %>
     <div class="col-md-4">
-      <div class="book_entry hvr-glow">
-        <h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  <%= link_to pub.title, publication_path(pub) %></h3>
-        <h4><%= pub.release_year %></h4>
-        $ <%= pub.price %>0
+      <div class="book_entry clickable hvr-glow">
+        <h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span> <span class="book_title"><a href="<%= publication_path(pub) %>"><%= pub.title %></a></span><br><br>
+          <%= pub.release_year %></h4>
+         <%= format_money(pub.price) %>
       </div>
     </div>
   <% end %>
