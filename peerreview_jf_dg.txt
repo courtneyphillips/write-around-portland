@@ -1,0 +1,54 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+39 commits, excellent work, super descriptive. You are overachievers. Alas,
+ there is no readme for instructions on how to set up the app.
+
+Is there good spec coverage?
+
+7 specs passing. That's 2 more than ours. Excellent job. Great coverage.
+
+
+Do all specs pass?
+
+7 specs passing. Excellent
+
+Is the application logic clear and easy to navigate?
+
+The site is very easy to navigate and beautifully designed.
+Excellent use of the bootstrap.
+
+
+Can you make a test payment through Stripe?
+
+First time through the site broke but the second time it worked like
+a charm. Superior execution. We chalk up the first breakage to operator
+error.
+
+
+Is the site user-friendly?
+
+The site is not only user-friendly but very pleasing to the eye.
+The colors are bright and the icons are large for we older users.
+
+Are there opportunities for refactoring?
+
+The code looks lean and elegant. We don't see an opportunities for
+refactoring.
+
+
+What features stand out?
+
+We really liked the e-store and the writers page, especially the latter.
+Really appreciated the timeline. Very visual.
+
+
+What features could be improved?
+
+Aside from content being added to the "Who We Are", "What We Do", "What You Can Do",
+which we assume will be added in later iterations, the features are superb.
+
+
+Do you have any additional constructive criticism or positive feedback to share?
+
+A beautiful site, well-executed. We prefer it to the original. With that said,
+we would've appreciated a README and use of simple cov but those are minor
+quibbles for such a stunning site. Kudos on such a great job. Well done.
