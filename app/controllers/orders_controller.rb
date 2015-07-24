@@ -8,7 +8,8 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.new(email: stripe_params[:stripeEmail], card_token: stripe_params[:stripeToken])
+    @order = Order.new(email: stripe_params[:stripeEmail],
+                       card_token: stripe_params[:stripeToken])
     @order.add_items(session[:cart])
     @order.update_total
     @order.process_payment
@@ -24,7 +25,6 @@ class OrdersController < ApplicationController
   def update_cart
     respond_to do |format|
       format.html do
-        # session[:cart][params[:publication_id]] = 1
         set_quantity_in_cart(params[:publication_id], 1)
         redirect_to publications_path, notice: "Item successfully added to cart."
       end
@@ -53,9 +53,4 @@ class OrdersController < ApplicationController
       Publication.price(publication_id) * quantity.to_i }
                   .reduce(:+)
   end
-
-  # def publications_params
-  #   params.select {|key, value| key.to_i.to_s == key }
-  # end
-
 end

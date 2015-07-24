@@ -11,12 +11,6 @@ class Order < ActiveRecord::Base
     publication_purchases.where(publication_id: publication.id).limit(1).first.quantity
   end
 
-  # def update_quantity(publication_id, new_quantity)
-  #   purchase = publication_purchases.find { |purchase|
-  #     purchase.publication_id = publication_id.to_i }
-  #   purchase.quantity = new_quantity
-  # end
-
   def add_items(params)
     # params is a hash of key value pairs 'publication_id => quantity'
     params.each do |publication_id, quantity|
