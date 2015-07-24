@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
   end
 
   def create
+    binding.pry
     @order = Order.new(stripe_params)
     @order.add_items(session[:cart])
     @order.update_total

@@ -9,7 +9,7 @@
 
 <h2><%= @publication.title %></h2>
 <h3 class="lead"><em>By Jane Doe</em> | <%= @publication.release_year %></h3>
-<h4>$<%= @publication.price %> </h4>
+<h4><%= format_money(@publication.price) %> </h4>
 
 <div class="book_image_container">
   <%= image_tag "book_placeholder.jpeg", class:"book_image" %>
