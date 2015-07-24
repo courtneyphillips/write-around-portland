@@ -1,9 +1,14 @@
+.header_image {
+  max-width: 100%;
+  height: auto;
+}
+
 .book_entry {
-  height: 100px;
+  height: 140px;
   width: 100%;
   margin: 10px;
+  padding: 15px;
   border: 1px solid #ecedeb;
-  padding: 10px;
 }
 
 .cart {
@@ -30,5 +35,34 @@
 }
 
 .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(225, 238, 195, 0.6);
+}
+
+.book_title a:hover {
+  text-decoration: none;
+  color: #f48833;
+}
+
+div.clickable {
+  position:relative;
+}
+
+div.clickable a {
+  position:absolute;
+  width:90%;
+  height:90%;
+  text-decoration:none;
+  z-index:10;
+
+}
+
+.book_image {
+  height: 300px;
+  width: auto;
+  position: relative;
+}
+
+.book_image_container {
+  width: 100%;
+  margin: 15px;
 }
