@@ -1,15 +1,25 @@
 <h2>Shopping Cart:</h2>
-<% @order.publications.each do |pub| %>
-  <%= pub.title %> -
-  <%= pub.price %><br>
-<% end %>
-<hr>
-<h3>Total: <%= @order.total %></h3>
-
-<%= form_for @order do |f| %>
+<%= form_tag orders_path do |f| %>
+  <table class="table">
+    <thead>
+      <th>Publication</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </thead>
+    <tbody>
+      <% @order_publications.each do |publication| %>
+      <tr>
+        <td><%= publication.title %></td>
+        <td><%= publication.price %></td>
+        <td><%= text_field_tag publication.id, 1%></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <hr>
+  <span id="total" class="pull-right">Total: <%= @total %></span>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
   data-description="Checkout"
-  data-amount="<%= @order.total*100 %>"
-  data-panel-label="Pay {{amount}}"></script>
+  data-panel-label="Pay"></script>
 <% end %>

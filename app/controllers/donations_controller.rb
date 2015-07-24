@@ -9,7 +9,7 @@ class DonationsController < ApplicationController
                                                    card_token: stripe_params[:stripeToken]))
     @donation.process_payment
     @donation.save
-    redirect_to donation_path(@donation), notice: 'Donation successfully made!'
+    redirect_to donation_path(@donation), notice: 'Thank you for your donation!'
   end
 
   def show

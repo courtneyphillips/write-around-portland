@@ -8,12 +8,6 @@
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
     data-description="Your Donations"
-    data-amount="100"
-    data-panel-label="Donate {{amount}}"></script>
+    data-amount=""
+    data-panel-label="Donate"></script>
 <% end %>
-<script>
-  $("#donation_amount").change(function() {
-    var amount = $(this).val();
-    $(".stripe-button").attr("data-amount", amount);
-  });
-</script>

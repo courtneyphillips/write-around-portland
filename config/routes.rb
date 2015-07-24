@@ -13,5 +13,4 @@ Rails.application.routes.draw do
   get '/index', to: 'pages#index'
   get '/writers', to: 'pages#writers'
 
-
 end

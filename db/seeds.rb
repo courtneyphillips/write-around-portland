@@ -1,4 +1,3 @@
-
 publications = Publication.create ([
   {
     title: "Roundabout",
