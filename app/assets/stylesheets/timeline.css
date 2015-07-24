@@ -17,7 +17,7 @@
 	display: inline-block;
 	position: relative;
 	background: #f48833;
-	padding: 69px;
+	padding: 74px;
   width: 150%;
   margin-left: -50%;
 }
@@ -36,7 +36,7 @@
 	border-left: 10px solid transparent;
 }
 
-.btn {
+.btn-custom {
   color: #FFFFFF;
   background-color: #c7c7c7;
   border-color: #c7c7c7;
