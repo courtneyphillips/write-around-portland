@@ -1,13 +1,1 @@
-<%= form_for @donation do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone_number %>
-  <%= f.label :amount %>
-  <%= f.text_field :amount %>
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
-    data-description="Your Donations"
-    data-amount=""
-    data-panel-label="Donate"></script>
-<% end %>
+<%= render "form" %>

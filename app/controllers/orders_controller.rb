@@ -8,8 +8,7 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.new(email: stripe_params[:stripeEmail],
-                       card_token: stripe_params[:stripeToken])
+    @order = Order.new(stripe_params)
     @order.add_items(session[:cart])
     @order.update_total
     @order.process_payment
@@ -38,7 +37,7 @@ class OrdersController < ApplicationController
 
   private
   def stripe_params
-    params.permit(:stripeEmail, :stripeToken)
+    params.permit(:email, :card_token)
   end
 
   def set_quantity_in_cart(publication_id, quantity)

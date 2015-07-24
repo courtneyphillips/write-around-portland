@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def format_money(amount)
+    return "$0.00" unless amount
     decimal_part = ((amount * 100) % 100).to_i
     integer_part = amount.to_i
     if decimal_part < 10
@@ -13,5 +14,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def quantity_in_cart(publication)
+    session[:cart][publication.id.to_s] || 0
+  end
+
   helper_method :format_money
+  helper_method :quantity_in_cart
 end
