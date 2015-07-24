@@ -7,19 +7,38 @@
       <th>Quantity</th>
     </thead>
     <tbody>
-      <% @order_publications.each do |publication| %>
+      <% @order.publications.each do |publication| %>
       <tr>
         <td><%= publication.title %></td>
         <td><%= publication.price %></td>
-        <td><%= text_field_tag publication.id, 1%></td>
+        <td><%= text_field_tag publication.id, 1, id: publication.id, class: "quantity" %></td>
       </tr>
       <% end %>
     </tbody>
   </table>
   <hr>
-  <span id="total" class="pull-right">Total: <%= @total %></span>
+  <span class="pull-right">Total:
+    <span id="total"><%= @order.total %></span>
+  </span>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.application.secrets.stripe_publishable_key %>"
   data-description="Checkout"
   data-panel-label="Pay"></script>
 <% end %>
+<script>
+  $(".quantity").on("change keyup paste", function() {
+    var publication_id = $(this).attr("id");
+    var quantity       = $(this).val();
+    if (quantity) {
+      $.ajax({
+        method: "PATCH",
+        url: "/update_cart",
+        dataType: "json",
+        data: { publication_id: publication_id,
+                quantity:       quantity }
+      }).then(function(response) {
+        $("#total").text(response.total);
+      });
+    }
+  });
+</script>

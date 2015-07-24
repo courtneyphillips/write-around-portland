@@ -2,9 +2,7 @@ class PublicationsController < ApplicationController
 
   def index
     @publications = Publication.all
-    if session[:cart] == nil
-      session[:cart] = []
-    end
+    session[:cart] = {} unless session[:cart]
     @cart_count = session[:cart].length
   end
 
